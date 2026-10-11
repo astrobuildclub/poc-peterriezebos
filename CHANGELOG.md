@@ -7,7 +7,7 @@ Categorieën: **Toegevoegd**, **Gewijzigd**, **Opgelost**, **Verwijderd**, **Bev
 
 ## [Unreleased]
 
-## [2026-10-08]
+## [2026-10-11]
 
 ### Onderhoud
 - POC. Niet live op een eigen domein; kan later verder.

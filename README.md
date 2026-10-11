@@ -11,7 +11,7 @@
 | **Live** | Geen eigen domein. POC: [peterriezebos.netlify.app](https://peterriezebos.netlify.app) |
 | **Netlify** | team All This (`allthis-digital`), site `peterriezebos` |
 | **CMS** | geen |
-| **Repo** | [github.com/allthis-mieras/peterriezebos](https://github.com/allthis-mieras/peterriezebos) |
+| **Repo** | [github.com/astrobuildclub/poc-peterriezebos](https://github.com/astrobuildclub/poc-peterriezebos) |
 | **Notion** | TODO |
 
 ## Stack
@@ -33,7 +33,7 @@ npm run dev            # http://localhost:3000
 
 Overige scripts: `npm run build`, `npm run preview`.
 
-Controle oktober 2026, Node 22: `npm install` en `npm run build` slagen. Vite waarschuwt dat de legacy Sass JS API verdwijnt (Dart Sass 2); de build rondt wel af.
+Controle 11 oktober 2026, Node 22: `npm install` en `npm run build` slagen. Vite waarschuwt dat de legacy Sass JS API verdwijnt (Dart Sass 2); de build rondt wel af.
 
 ### Environment-variabelen
 
@@ -56,7 +56,7 @@ Geen CMS. Tekst en media staan in `index.html` en `src/media/`. About-momenten b
 
 ## Branches
 
-Netlify deployt **`main`** (build `npm run build`, publish `dist`). Er stond geen `netlify.toml` in de repo; die instellingen staan in de Netlify-UI. `allowed_branches` is alleen `main`.
+Netlify (site `peterriezebos`, team `allthis-digital`) deployt **`main`**: build `npm run build`, publish `dist`. In de Netlify-UI staat de repo nog als `allthis-mieras/peterriezebos`; die URL verwijst door naar `astrobuildclub/poc-peterriezebos`. `allowed_branches` is alleen `main`. Deze PR voegt dezelfde build-instellingen toe in `netlify.toml`.
 
 | Branch | Wat erop staat |
 |---|---|
@@ -79,8 +79,7 @@ Netlify deployt **`main`** (build `npm run build`, publish `dist`). Er stond gee
 ## Bekende issues en afspraken
 
 - POC, oktober 2026. Niet live op een eigen domein. Kan later verder. Geen nieuwe features zonder overleg.
-- `git fetch` naar `origin` (`github.com/astrobuildclub/poc-peterriezebos`) geeft 404. Die repo bestaat niet. Netlify en de geschiedenis hangen aan `allthis-mieras/peterriezebos`. De lokale `origin` wijst nog naar de niet-bestaande URL.
-- Lokale branch `main` liep achter op GitHub (`83a48db` tegen `12a96d0`). Deze branch is gebaseerd op de GitHub-`main`.
+- Netlify-koppeling toont nog `allthis-mieras/peterriezebos`. GitHub stuurt die URL door naar `astrobuildclub/poc-peterriezebos`. De branch die deployt is `main`.
 
 ---
 
